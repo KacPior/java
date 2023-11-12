@@ -1,0 +1,24 @@
+<html>
+<body>
+<div style="color:green;font-size:50px;">
+<script language="JavaScript">
+var D1_pio=prompt("Data1=","");
+var G1_pio=prompt("Godzina1=","");
+var D2_pio=prompt("Data2=","");
+var G2_pio=prompt("Godzina2=","");
+var sekund;
+var a=parseFloat(D1_pio);
+var b=parseFloat(D2_pio);
+var c=parseFloat(G1_pio);
+var d=parseFloat(G2_pio);
+sekund=((a-b)*24+c-d)*3600;
+document.write("Ilość sekund między dniami "+a+" i "+b+" = "+sekund+"<br>");
+function okno_zamknij_piorkowski()
+{
+window.close()
+}
+</script>
+</div>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_piorkowski()"/>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+</head>
+<body>
+   <textarea cols="100" rows="40">
+<html>
+<head>
+   <script type="text/javascript">
+      function samochod(marka,model,konie_mechaniczne)//początek konstruktora
+      {
+      this.marka=marka;
+      this.model=model;
+      this.konie_mechaniczne=konie_mechaniczne;
+      }//koniec konstruktora
+
+      samochod.prototype.wypisz = function () //definicja metody
+      {
+      alert(this.marka + ' ' + this.model+ ' ' + this.konie_mechaniczne);
+      };
+
+      var samochod1 = new samochod("volvo", "s60", "190"); // nowy obiekt osoba1
+      var samochod2 = new samochod('bmw', 'e39', '170');
+      samochod1.wypisz(); // uruchomienie metody wypisz() dotyczącej osoby 1
+      samochod2.wypisz();
+      document.write("dostęp do właściwości"+"<br>");
+      // poniżej dostęp do pól osoby1
+      document.write("samochod pierwszy"+" &nbsp;marka: "+samochod1.marka+" &nbsp;model: "+samochod1.model+" &nbsp;konie mechaniczne: "+samochod1.konie_mechaniczne+"<br>");
+      document.write("samochod drugi"+" &nbsp;marka: "+samochod2.marka+" &nbsp;model: "+samochod2.model+" &nbsp;konie mechaniczne: "+samochod2.konie_mechaniczne);
+   </script>
+</head>
+<body>
+   <br>
+   programowanie obiektowe
+</body>
+</html>
+   </textarea>
+</body>
+</html>

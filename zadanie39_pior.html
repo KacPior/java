@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+   <h1 style="color: green;">menu</h1>
+   <h2 style="color: red;">1 - czerwony</h2>
+   <h2 style="color: blue;">2 - niebieski</h2>
+   <input type="button" onclick="spr()" name="spr_pio" value="oblicz">
+   <br>
+    <script>
+function spr() {
+var x_pio=prompt("podaj kolor");
+if(x_pio==1 || x_pio.toLocaleLowerCase()=="czerwony"){
+   document.write('<h1 style="color:red;">webrałes kolor czerwony</h1><br>');
+      }
+    else if(x_pio==2 || x_pio.toLocaleLowerCase()=="niebieski"){
+   document.write('<h1 style="color:blue;">wbrałeś kolor niebieski</h1><br>');
+      }
+    else{
+   document.write("błąd");
+}
+}
+    </script>
+</body>
+</html>
